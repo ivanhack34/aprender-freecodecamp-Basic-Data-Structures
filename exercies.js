@@ -18,4 +18,3 @@ console.log(myArray);
 */
 
 //?3-Add Items to an Array with push() and unshift()
-
