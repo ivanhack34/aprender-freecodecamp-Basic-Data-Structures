@@ -124,5 +124,44 @@ function quickCheck(arr, elem) {
 console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 */
 
+//TODO: Exercise of day 19: 26/1/2023
+
 //?11-Iterate Through All an Array's Items Using For Loops
+/*
+function filteredArray(arr, elem) {
+  let newArr = [];
+  // Only change code below this line
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i].indexOf(elem) == -1) {
+      //Checks every parameter for the element and if is NOT there continues the code
+      newArr.push(arr[i]); //Inserts the element of the array in the new filtered array
+    }
+  }
+
+  // Only change code above this line
+  return newArr;
+}
+
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [-2, -4, -5]], 3));
+*/
+
+//?12-Create complex multi-dimensional arrays
+/*
+let myNestedArray = [
+  // Only change code below this line
+  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  ['loop', 'shift', 6, 7, 1000, 'method'],
+  ['concat', false, true, 'spread', 'array', ["deep"]],
+  ['mutate', 1327.98, 'splice', 'slice', 'push', [["deeper"]]],
+  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth',[[["deepest"]]]]
+  //What was done is that in the last 3 lines, at the end of the array, a multidimensional array was added. 
+  //As in the third = deep, in the fourth deepest with double array and the fifth deepest as triple array.
+  // Only change code above this line
+];
+
+console.log(myNestedArray)
+*/
+
+//?13-Add Key-Value Pairs to JavaScript Objects
 
