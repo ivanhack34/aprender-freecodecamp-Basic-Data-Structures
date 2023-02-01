@@ -163,5 +163,186 @@ let myNestedArray = [
 console.log(myNestedArray)
 */
 
+//TODO: Exercise of day 20: 1/2/2023
+
 //?13-Add Key-Value Pairs to JavaScript Objects
+
+/*
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+// Only change code below this line
+foods.bananas  = 13; 
+foods.grapes  = 35;
+foods.strawberries   = 27;
+//What was done that the object added properties and values to the object.
+// Only change code above this line
+
+console.log(foods);
+*/
+
+//?14-Modify an Object Nested Within an Object
+
+/*
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+
+// Only change code below this line
+userActivity.data.online = 45; 
+//In this answer, it shows that in an object. A value can be added inside another object or in this case a property and value.
+// Only change code above this line
+
+console.log(userActivity);
+*/
+
+//?15-Access Property Names with Bracket Notation
+
+/*
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+};
+
+function checkInventory(scannedItem) {
+  // Only change code below this line
+ return foods[scannedItem]; //This shows me with the value of the parameter, the response of the property of that object.
+  // Only change code above this line
+}
+
+console.log(checkInventory("apples"));
+*/
+
+//?16-Use the delete Keyword to Remove Object Properties
+
+/*
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+};
+
+// Only change code below this line
+delete foods.oranges;
+delete foods.plums;
+delete foods.strawberries ;
+//Which takes care of removing some properties of the object with delete.
+// Only change code above this line
+
+console.log(foods);
+*/
+
+//?17-Check if an Object has a Property
+
+/*
+let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function isEveryoneHere(userObj) {
+  // Only change code below this line
+ return ["Alan", "Jeff", "Sarah", "Ryan"].every(name =>
+    userObj.hasOwnProperty(name)
+  ); // This returns the properties of the user object. 
+     //So that the arrow function calls all the properties of the user object. Where mention if it is false or true.
+  // Only change code above this line
+}
+
+console.log(isEveryoneHere(users));
+*/
+
+//?18-Iterate Through the Keys of an Object with a for...in Statement
+
+/*
+const users = {
+  Alan: {
+    online: false
+  },
+  Jeff: {
+    online: true
+  },
+  Sarah: {
+    online: false
+  }
+}
+
+function countOnline(usersObj) {
+  // Only change code below this line
+let result = 0;
+  for (let user in usersObj) {
+    if (usersObj[user].online === true) {
+      result++;
+    }
+  }
+  return result;
+  //A variable is created to display each result. Then a for is created where each user will be called. 
+  //To check if it is equal to true and if it is false. No results are displayed.
+  // Only change code above this line
+}
+
+console.log(countOnline(users));
+*/
+
+//?19-Generate an Array of All Object Keys with Object.keys()
+
+/*
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function getArrayOfUsers(obj) {
+  // Only change code below this line
+  return Object.keys(obj); //This returns me an object. Where it will show me each key, that is, each property of that object. 
+  // Only change code above this line
+}
+
+console.log(getArrayOfUsers(users));
+*/
+
+//?20-Modify an Array Stored in an Object
 
