@@ -344,5 +344,39 @@ function getArrayOfUsers(obj) {
 console.log(getArrayOfUsers(users));
 */
 
+//TODO: Exercise of day 21: 2/2/2023
+
 //?20-Modify an Array Stored in an Object
 
+/*
+let user = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(userObj, friend) {
+  // Only change code below this line
+  userObj.data.friends.push(friend);
+  return userObj.data.friends;
+   //Which makes it call from the object to the properties all the way to the friends property
+   //To then show each of the fields of the array friends. To then return the responses in an array
+  // Only change code above this line
+}
+
+console.log(addFriend(user, 'Pete'));
+*/
